@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/Navbar.css">
+<link rel="icon" type="image/png" href="imagenes/images.png">
+<link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Spartan: wght @ 500 & display = swap "rel =" stylesheet ">
+    <title>Contactos</title>
+</head>
+<body>
+<!--Buscador/inicio sesion/ agregar al carrito-->
+    <header>
+        <div>
+        <a href="index.html">
+            <img class="icon"  src="imagenes/images.png" alt="Logo de la pagina">
+        </a>
+        </div>
+        <a class="celularesWeb" href="index.html"><h1 class="celweb">Celulares web</h1></a>
+        <div class="buscador">
+            <input type="text" class="search" placeholder="Escribe lo que buscas ">
+        </div>
+    </div>
+        <div class="contenedorsito">
+            <div class="sizeee">
+                <a href="#">
+                    <img  class="sesion"  src="imagenes/iconos/i32-02.png" alt="tu cuenta">
+                </a>
+        </div>
+            <div>
+                <a class="asad" href="#">
+                    <img class="carrito" src="imagenes/iconos/ic 2-01.png" alt="agregar a carrito">
+                </a>
+            </div>
+        </div>
+    </header>
+<!----------Navegacion de la pagina---------->
+    <nav>
+        <div>
+            <ul class="inicio">
+                <li><a href="index.html">Home</a></li>
+                <li class="per"><a href="marcas.html">Marcas</a>
+                    <ul class="subitem">
+                        <li><a class="pow" href="Iphone.html">Apple</a></li>
+                        <li><a class="pow" href="Samsung.html">Samsung</a></li>
+                        <li><a class="pow" href="Xiaomi.html">Xiaomi</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="envio.html">Seguir envio</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+<!------Formulario de contacto------->
+
+<div class="contenedor">
+    <form action="" class="form">
+        <div class="formee">
+            <h1 class="formet">Formulario de contacto</h1>
+        </div>
+        <div>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input class="form-input" type="text" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div>
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input class="form-input" type="text" id="apellido" placeholder="Escribe tu apellido">
+        </div>
+        <div>
+            <label for="pais" class="form-label"> Elije tu pais </label>
+            <select name="pais" class="form-input" id="">Seleccion tu pais
+                <option class="form-opt" value="argentina">Argentina</option>
+                <option class="form-opt" value="uruguay">Uruguay</option>
+                <option class="form-opt" value="brasil">Brasil</option>
+                <option class="form-opt" value= "paraguay">Paraguay</option>
+                <option class="form-opt"value="peru">Perú</option>
+                <option class="form-opt" value="chile">Chile</option>
+                <option class="form-opt" value="bolivia">Bolivia</option>
+        </select>
+        </div>
+        <div>
+            <label for="email" class="form-label">Correo electronico</label>
+            <input class="form-input" type="email" id="email" placeholder="Escriba su correo">
+        </div>
+        <div>
+            <label for="consulta" class="form-label">Deje su consulta</label>
+            <textarea class="form-textarea" name="consulta" id="consulta"  placeholder="Escriba aqui su consulta"></textarea>
+        </div>
+        <div>
+            <input class="btn-submit" type="submit" value="Enviar Consulta">
+        </div>
+    </form>
+</div>
+<!-------Redes sociales------->
+<footer id="footerM">
+    <div class="padre">
+        <a class="imgW" href="index.html">
+            <img class="celimg" src="imagenes/images.png" alt="logo de la pagina">
+        </a> 
+        <a href="index.html"><h3 class="WC">Celulares Web</h3></a>
+        <ul class="listaUno">
+            <li>Protocolos Covid 19</li>
+            <li>Términos y condiciones</li>
+            <li>Defensa del consumidor</li>
+        </ul>
+        <ul class="listaDos">
+            <li>Preguntas frecuentes</li>
+            <li>Ubicación</li>
+            <li>Métodos de pagos y descuentos</li>
+        </ul>
+    </div>
+
+</footer>
+
+<script src="popper.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
