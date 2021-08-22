@@ -1,0 +1,67 @@
+/*header*/
+
+
+
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bgcolor;
+    font-family:'Spartan', sans-serif;
+    .celularesWeb{
+        text-decoration: none;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        font-family: 'Spartan', sans-serif;
+        margin: 10px;
+        .celweb{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    .icon{
+        width: 40px;
+        height: auto;
+        display: inline-block;
+    }
+    h1{
+        color: $whcolor;
+    }
+    .buscador{
+        display: inline-block;
+        margin: 20px;
+        .search{
+            width: 1000px;
+            height: 40px;
+            border-radius: 3px;
+        }
+    }
+    .contenedorsito{
+        width: 25%;
+        display: inline-flex;
+        .sesion{
+            width: 170px;
+            position: relative;
+            top: 75px;
+            left: 120px;
+        }
+        .carrito{
+            width: 270px;
+            position: relative;
+            top: 15px;
+        }
+    }
+}
+
+

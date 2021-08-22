@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "colores" ;
+@import "nav" ;
+@import "header" ;
+@import "footer" ;
+@import "media" ;
+@import "mediamobile";
+@import "mediatablets";
+
+
+/*Media queries*/
+@media only screen and (max-width: 768) {
+    body{
+        background-color: blue;
+    } 
+}
+@media only screen and (min-width: 768px){
+    body {
+        background-color: darkmagenta;
+    }
+}
+@media only screen and (min-width: 1024px) { 
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+
+
+
+/* body */
+body{
+    background-color: black;
+    margin: 0;
+}
+
+
+
+/* Marcas Grid pagina 2 */
+@mixin grid-marcas-dos-tres {
+    background: linear-gradient(($f2color), ($viocolor), );
+    color: $lettercolor;
+    text-align: center;
+    width: auto;
+    height: 1000px;
+    padding: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "uno cuatro cinco seis"
+        "dos siete ocho nueve"
+        "tres diez once doce";
+}
+
+@mixin pag-dos ($gridarea){
+    color: $lettercolor;
+    grid-area: $gridarea;
+    font-size: xx-large;
+}
+
+@mixin transform {
+    transform: scale(1.5,1.5);
+}
+
+@mixin page-dos-img ($width, $gridarea){
+    width: $width;
+    height: auto;
+    grid-area: $gridarea;
+}
+
+
+#gridD{
+    @include grid-marcas-dos-tres();
+        .textUno{
+            @include pag-dos(uno)
+        }
+        .textDos{
+            @include pag-dos(dos)
+        }
+        .textTres{
+            @include pag-dos(tres)
+        }
+        .imgUno{
+            &:hover{
+                @include transform();
+            }
+            .sizeA{
+                @include page-dos-img(160px,cuatro )
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transform();
+            }
+            .sizeB{
+                @include page-dos-img(180px, cinco )
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transform();
+            }
+            .sizeC{
+                @include page-dos-img(160px, seis )
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transform();
+            }
+            .sizeD{
+                @include page-dos-img(150px, siete )
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transform();
+            }
+            .sizeE{
+                @include page-dos-img(140px, ocho )
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transform();
+            }
+            .sizeF{
+                @include page-dos-img(230px, nueve )
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transform();
+            }
+            .sizeG{
+                @include page-dos-img(160px, diez )
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transform();
+            }
+            .sizeH{
+                @include page-dos-img(170px, once )
+            }
+        }
+        .imgNueve{
+            &:hover{
+                @include transform();
+            }
+            .sizeI{
+                @include page-dos-img(130px, doce )
+            }
+        }
+}
+
+.navigation{
+    background-color: $viocolor;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Grid marcas pagina 3*/
+#gridT{
+    @include grid-marcas-dos-tres();
+        .textUno{
+            @include pag-dos(uno)
+        }
+        .textDos{
+            @include pag-dos(dos)
+        }
+        .textTres{
+            @include pag-dos(tres)
+        }
+        .imgUno{
+            &:hover{
+                @include transform();
+            }
+            .sizeJ{
+                @include page-dos-img(160px, cuatro);
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transform();
+            }
+            .sizeK{
+                @include page-dos-img(160px, cinco);
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transform();
+            }
+            .sizeM{
+                @include page-dos-img(160px, seis);
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transform();
+            }
+            .sizeN{
+                @include page-dos-img(150px, siete);
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transform();
+            }
+            .sizeÑ{
+                @include page-dos-img(180px, ocho);
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transform();
+            }
+            .sizeL{
+                @include page-dos-img(180px, nueve);
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transform();
+            }
+            .sizeO{
+                @include page-dos-img(160px, diez);
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transform();
+            }
+            .sizeP{
+                @include page-dos-img(240px, once);
+            }
+        }
+        .imgNueve{
+            &:hover{
+                @include transform();
+            }
+            .sizeQ{
+                @include page-dos-img(180px, doce);
+            }
+        }
+}

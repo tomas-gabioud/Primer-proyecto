@@ -1,0 +1,36 @@
+/* footer */
+#footerM{
+    width: 100%;
+    height:auto;
+    background-color: $whcolor;
+    .padre{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        .imgW{
+            position: relative;
+            right: 500px;
+            .celimg{
+                display: block;
+            }
+        }
+    }
+    .WC{
+        font-size: xx-large;
+        font-family: 'Spartan', sans-serif;
+        text-decoration: none;
+        color: $bgcolor;
+        display: inline-block;
+        position: relative;
+        right: 300px;
+        .listaUno{
+            display: inline-block;
+            position: relative;
+            right: 100px;
+            .listaDos{
+                display: inline-block;
+            }
+        }
+    }
+}

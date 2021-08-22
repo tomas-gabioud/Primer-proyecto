@@ -1,0 +1,561 @@
+/* ------------------media queries tablets  > =  768 PX --------------------*/
+
+
+
+/* Header*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    header{
+        .icon{
+            width: 35px;
+            margin: 5px;
+            height: auto;
+            display: inline-block;
+        }
+        .celweb{
+            display: none;
+        }
+        .buscador{
+            margin: 10px;
+            .search{
+                width: 55vw;
+                height: 40px;
+                border-radius: 3px;
+                position: relative;
+                right: -5%;
+                top: 1%;
+            }
+        }
+        .contenedorsito{
+            width: 500px;
+            .carrito{
+                width: 22vw;
+                position: relative;
+                top: 7%;
+                right: 50%;
+            }
+            .sesion{
+                width: 15vw;
+                position: relative;
+                top: 19%;
+                left: 110%;
+            }
+        }
+    }
+}
+
+/* nav */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    nav{
+        .inicio{
+            font-size: 0.9rem;
+        }
+    }
+    .subitem{
+        position: absolute;
+        left: 135px;
+        top: 70px;
+        display: block;
+    }
+}
+
+/* Main index */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .fefe{
+        .banner{
+            .banner_description{
+                font-size: 1rem;
+                .descrip{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* carrousel img */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .basss{
+        .carI{
+            width: 100vw;
+        }
+        .carS{
+            width: 100vw;
+        }
+        .carX{
+            width: 100vw;
+        }
+    }
+}
+
+/* Marcas inicial (style) < 576px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #grid{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgUno{
+                .sizeA{
+                    width: 60px;
+                }
+            }
+            .imgDos{
+                .sizeB{
+                    width: 70px;
+                }
+            }
+            .imgTres{
+                .sizeC{
+                    width: 75px;
+                }
+            }
+            .imgCuatro{
+                .sizeD{
+                    width: 150px;
+                }
+            }
+            .imgCinco{
+                .sizeE{
+                    width: 60px;
+                }
+            }
+            .imgSeis{
+                .sizeF{
+                    width: 110px;
+                }
+            }
+            .imgSiete{
+                .sizeG{
+                    width: 80px;
+                }
+            }
+            .imgOcho{
+                .sizeH{
+                    width: 90px;
+                }
+            }
+            .imgNueve{
+                .sizeI{
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+
+/* Marcas 2 - 3 */
+
+
+/* Pagina 2 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #gridD{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgUno{
+                .sizeA{
+                    width: 80px;
+                }
+            }
+            .imgDos{
+                .sizeB{
+                    width: 90px;
+                }
+            }
+            .imgTres{
+                .sizeC{
+                    width: 90px;
+                }
+            }
+            .imgCuatro{
+                .sizeD{
+                    width: 80px;
+                }
+            }
+            .imgCinco{
+                .sizeE{
+                    width: 80px;
+                }
+            }
+            .imgSeis{
+                .sizeF{
+                    width: 130px;
+                }
+            }
+            .imgSiete{
+                .sizeG{
+                    width: 95px;
+                }
+            }
+            .imgOcho{
+                .sizeH{
+                    width: 105px;
+                }
+            }
+            .imgNueve{
+                .sizeI{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Pagina 3*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #gridT{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgUno{
+                .sizeJ{
+                    width: 90px;
+                }
+            }
+            .imgDos{
+                .sizeK{
+                    width: 90px;
+                }
+            }
+            .imgTres{
+                .sizeM{
+                    width: 90px;
+                }
+            }
+            .imgCuatro{
+                .sizeN{
+                    width: 70px;
+                }
+            }
+            .imgCinco{
+                .sizeÑ{
+                    width: 85px;
+                }
+            }
+            .imgSeis{
+                .sizeL{
+                    width: 95px;
+                }
+            }
+            .imgSiete{
+                .sizeO{
+                    width: 90px;
+                }
+            }
+            .imgOcho{
+                .sizeP{
+                    width: 140px;
+                }
+            }
+            .imgNueve{
+                .sizeQ{
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+
+/* Marcas Iphone Samsung Xiaomi */
+
+/*     IPHONE    */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #gridI{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgSiete{
+                .sizeG{
+                    width: 80px;
+                }
+            }
+            .imgUno{
+                .sizeA{
+                    width: 80px;
+                }
+            }
+            .imgOcho{
+                .sizeH{
+                    width: 80px;
+                }
+            }
+            .imgDos{
+                .sizeB{
+                    width: 90px;
+                }
+            }
+            .imgTres{
+                .sizeC{
+                    width: 90px;
+                }
+            }
+            .imgCuatro{
+                .sizeD{
+                    width: 100px;
+                }
+            }
+            .imgNueve{
+                .sizeI{
+                    width: 80px;
+                }
+            }
+            .imgCinco{
+                .sizeE{
+                    width: 100px;
+                }
+            }
+            .imgSeis{
+                .sizeF{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+
+/*       SAMSUNG     */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #gridS{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgUno{
+                .sizeJ{
+                    width: 110px;
+                }
+            }
+            .imgDos{
+                .sizeK{
+                    width: 70px;
+                }
+            }
+            .imgTres{
+                .sizeM{
+                    width: 140px;
+                }
+            }
+            .imgCuatro{
+                .sizeN{
+                    width: 90px;
+                }
+            }
+            .imgCinco{
+                .sizeÑ{
+                    width: 80px;
+                }
+            }
+            .imgSeis{
+                .sizeL{
+                    width: 100px;
+                }
+            }
+            .imgSiete{
+                .sizeQ{
+                    width: 90px;
+                }
+            }
+            .imgOcho{
+                .sizeO{
+                    width: 85px;
+                }
+            }
+            .imgNueve{
+                .sizeP{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+/*  XIAOMI   */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        #gridX{
+            font-size: 0.8rem;
+            .textUno{
+                font-size: 0.9rem;
+            }
+            .textDos{
+                font-size: 0.9rem;
+            }
+            .textTres{
+                font-size: 0.9rem;
+            }
+            .imgNueve{
+                .sizeR{
+                    width: 70px;
+                }
+            }
+            .imgOcho{
+                .sizeS{
+                    width: 100px;
+                }
+            }
+            .imgDos{
+                .sizeT{
+                    width: 90px;
+                }
+            }
+            .imgTres{
+                .sizeU{
+                    width: 80px;
+                }
+            }
+            .imgUno{
+                .sizeV{
+                    width: 95px;
+                }
+            }
+            .imgSiete{
+                .sizeW{
+                    width: 90px;
+                }
+            }
+            .imgSeis{
+                .sizeX{
+                    width: 135px;
+                }
+            }
+            .imgCuatro{
+                .sizeY{
+                    width: 70px;
+                }
+            }
+            .imgCinco{
+                .sizeZ{
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+
+/*Nosotros */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .pip{
+        .quienesSomos{
+            .aU{
+                font-size: 3.5rem;
+            }
+            .qs{
+                .fontq{
+                    font-size: 2.5rem;
+                }
+                .textU{
+                    font-size: 1.7rem;
+                }
+            }
+            .qh{
+                .qhh{
+                    font-size: 2.5rem;
+                }
+                .textD{
+                    font-size: 1.7rem;
+                }
+            }
+            .pc{
+                .pqec{
+                    font-size: 2.5rem;
+                }
+                .evdm{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+/* Envio */
+@media only screen and (min-width: 768px) and (max-width: 992px)  {
+    .artE{
+        div{
+            .itce{
+                font-size: 2rem;
+            }
+        }
+        .face{
+            div{
+                .ces{
+                    width: 75%;
+                }
+            }
+            div{
+                .cesc{
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*Footer*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px)  {
+    #footerM{
+        .celimg{
+            position: relative;
+            left: 445px;
+            width: 60px;
+        }
+        .WC{
+            display: inline-block;
+            position: relative;
+            right: 50px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .listaUno{
+            font-size: 0.9rem;
+        }
+        .listaDos{
+            font-size: 0.9rem;
+        }
+    }
+}

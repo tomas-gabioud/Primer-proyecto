@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "colores" ;
+@import "nav" ;
+@import "header" ;
+@import "footer" ;
+@import "media" ;
+@import "mediamobile";
+@import "mediatablets";
+
+/* body */
+body{
+    background-color: black;
+    margin: 0;
+}
+
+/*Main*/
+main{
+    .banner{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: center fixed url(../imagenes/SUPPERIPHONE.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .banner_description{
+            width: 90%;
+            max-width: 1000px;
+            display: block;
+            margin: auto;
+        }
+        .Imgpr{
+            color: $cimgcolor;
+            font-family: 'Spartan', sans-serif;
+            font-weight: 600;
+            font-size: 5em;
+        }
+        .descrip{
+            font-family: 'Spartan', sans-serif;
+            color: $cimgcolor;
+            font-size: 3rem;
+            opacity: 0.8;
+            margin: 1em 0;
+        }
+        .buy{
+            font-family: 'Spartan', sans-serif;
+            border: 2px solid $bgcolor;
+            padding: 0.7em 3.5em;
+            margin: auto;
+            color: $bgcolor;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            background: linear-gradient(to right, $gradicolor);
+            background-size: 200%;
+            background-position: right;
+            transition: background-position 0.5s;
+            &:hover{
+                background-position: left;
+                color: $whcolor;
+                border: 2px solid $whcolor;
+            }
+        }
+    }
+}
+
+/* carrousel de imagenes */
+@mixin basss {
+    width: 100%;
+    height: 1200px;
+}
+.basss{
+    .carI img{
+        @include basss;
+    }
+    .carS img{
+        @include basss;
+    }
+    .carX img{
+        @include basss;
+    }
+}
+
+/* Marcas*/
+
+@mixin text ($gridarea){
+    color: $lettercolor;
+    font-size: xx-large;
+    grid-area: $gridarea;
+}
+
+@mixin transformacion {
+    transform: scale(1.5,1.5);
+}
+
+@mixin tamaño-img ($width, $gridarea){
+    width: $width;
+    grid-area: $gridarea;
+    height: auto;
+}
+
+
+#grid{
+    background: linear-gradient(($f2color), ($viocolor), );
+    color:$lettercolor;
+    text-align: center;
+    width: auto;
+    height: 1000px;
+    padding: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "uno cuatro cinco seis"
+        "dos siete ocho nueve"
+        "tres diez once doce";
+        .textUno{
+            @include text (uno);
+        }
+        .textDos{
+            @include text (dos);
+        }
+        .textTres{
+            @include text (tres);
+        }
+        .imgUno{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeA{
+                @include tamaño-img(140px, cuatro)
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeB{
+                @include tamaño-img(170px, cinco )
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeC{
+                @include tamaño-img(180px, seis )
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeD{
+                @include tamaño-img(300px, siete )
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeE{
+                @include tamaño-img(130px, ocho )
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeF{
+                @include tamaño-img(220px, nueve )
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeG{
+                @include tamaño-img(170px, diez )
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeH{
+                @include tamaño-img(180px, once )
+            }
+        }
+        .imgNueve{
+            &:hover{
+                @include transformacion;
+            }
+            .sizeI{
+                @include tamaño-img(130px, doce )
+            }
+        }
+}
+.navigation{
+    background-color: $viocolor;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+

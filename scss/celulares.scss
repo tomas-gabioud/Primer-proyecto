@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "colores" ;
+@import "nav" ;
+@import "header" ;
+@import "footer" ;
+@import "media" ;
+@import "mediamobile";
+@import "mediatablets";
+
+/* body */
+body{
+    background-color: black;
+    margin: 0;
+}
+
+
+
+
+/* Celular Iphone */
+
+.navigation{
+    background-color: $viocolor;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+@mixin grid-celulares {
+    background: linear-gradient(($f2color), ($viocolor), );
+    color: $lettercolor;
+    text-align: center;
+    width: auto;
+    height: 1000px;
+    padding: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "uno cuatro cinco seis"
+        "dos siete ocho nueve"
+        "tres diez once doce";
+}
+
+@mixin texto-celulares ($gridarea){
+    color: $lettercolor;
+    grid-area: $gridarea;
+    font-size: xx-large;
+}
+
+@mixin transform-celulares {
+    transform: scale(1.5,1.5);
+}
+
+@mixin tamaño-celulares ($width, $gridarea){
+    width: $width;
+    height: auto;
+    grid-area: $gridarea;
+}
+
+/* IPHONE */
+#gridI{
+    @include grid-celulares();
+        .textUno{
+            @include texto-celulares(uno)
+        }
+        .textDos{
+            @include texto-celulares(dos)
+        }
+        .textTres{
+            @include texto-celulares(tres)
+        }
+        .imgUno{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeA{
+                @include tamaño-celulares(160px, cuatro);
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeB{
+                @include tamaño-celulares(180px, cinco);
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeC{
+                @include tamaño-celulares(180px, seis);
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeD{
+                @include tamaño-celulares(180px, siete);
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeE{
+                @include tamaño-celulares(180px, ocho);
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeF{
+                @include tamaño-celulares(180px, nueve);
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeG{
+                @include tamaño-celulares(180px, diez);
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeH{
+                @include tamaño-celulares(170px, once);
+            }
+        }
+        .imgNueve{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeI{
+                @include tamaño-celulares(130px, doce);
+            }
+        }
+}
+
+/* Celular Samsung*/
+
+
+#gridS{
+    @include grid-celulares();
+        .textUno{
+            @include texto-celulares(uno);
+        }
+        .textDos{
+            @include texto-celulares(dos);
+        }
+        .textTres{
+            @include texto-celulares(tres);
+        }
+        .imgUno{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeJ{
+                width: 240px;
+                height: auto;
+                grid-area: cuatro;
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeK{
+                width: 140px;
+                height: auto;
+                grid-area: cinco;
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeM{
+                width: 330px;
+                height: auto;
+                grid-area: seis;
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeN{
+                width: 170px;
+                height: auto;
+                grid-area: siete;
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeÑ{
+                width: 170px;
+                height: auto;
+                grid-area: ocho;
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeL{
+                width: 200px;
+                height: auto;
+                grid-area: nueve;
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeQ{
+                width: 170px;
+                height: auto;
+                grid-area: diez;
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeO{
+                width: 170px;
+                height: auto;
+                grid-area: once;
+            }
+        }
+        .imgNueve{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeP{
+                width: 270px;
+                height: auto;
+                grid-area: doce;
+            }
+        }
+}
+
+
+/* celular Xiaomi */
+
+#gridX{
+    @include grid-celulares();
+        .textUno{
+            @include texto-celulares(uno);
+        }
+        .textDos{
+            @include texto-celulares(dos);
+        }
+        .textTres{
+            @include texto-celulares(tres);
+        }
+        .imgNueve{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeR{
+                @include tamaño-celulares(130px, cuatro);
+            }
+        }
+        .imgOcho{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeS{
+                @include tamaño-celulares(190px, cinco);
+            }
+        }
+        .imgDos{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeT{
+                @include tamaño-celulares(180px, seis);
+            }
+        }
+        .imgTres{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeU{
+                @include tamaño-celulares(170px, siete);
+            }
+        }
+        .imgUno{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeV{
+                @include tamaño-celulares(210px, ocho);
+            }
+        }
+        .imgSiete{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeW{
+                @include tamaño-celulares(200px, nueve);
+            }
+        }
+        .imgSeis{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeX{
+                @include tamaño-celulares(230px, diez);
+            }
+        }
+        .imgCuatro{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeY{
+                @include tamaño-celulares(140px, once);
+            }
+        }
+        .imgCinco{
+            &:hover{
+                @include transform-celulares();
+            }
+            .sizeZ{
+                @include tamaño-celulares(170px, doce);
+            }
+        }
+}

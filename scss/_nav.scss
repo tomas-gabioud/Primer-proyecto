@@ -1,0 +1,64 @@
+/*Navegation*/
+
+nav{
+    .inicio{
+        background-color: $f2color;
+        list-style: none;
+        font-size: 30px;
+        font-family: 'Spartan', sans-serif;
+        padding: 10px;
+        width: 100%;
+        margin:0px auto;
+        border-radius: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        li{
+            display: inline-block;
+            padding: 20px;
+            font-weight: bolder;
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 5px;
+                color: $viocolor;
+                &:hover{
+                    background-color: $viocolor;
+                    color: $f2color;
+                    border-radius: 50px;
+                }
+            }
+            &:hover{
+                .subitem{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.subitem{
+    background-color: rgb(18, 19, 18);
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    left: 590px;
+    top: 100px;
+    width: 240px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    .pow{
+        color: white;
+        position: relative;
+        right: 10px;
+        &:hover{
+            color: black;
+            background-color: white;
+        }
+    }
+}

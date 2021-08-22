@@ -1,0 +1,2185 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Navegation*/
+nav .inicio {
+  background-color: #f2f2f2;
+  list-style: none;
+  font-size: 30px;
+  font-family: 'Spartan', sans-serif;
+  padding: 10px;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 0px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+nav .inicio li {
+  display: inline-block;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+nav .inicio li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  color: #9273df;
+}
+
+nav .inicio li a:hover {
+  background-color: #9273df;
+  color: #f2f2f2;
+  border-radius: 50px;
+}
+
+nav .inicio li:hover .subitem {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subitem {
+  background-color: #121312;
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  left: 590px;
+  top: 100px;
+  width: 240px;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subitem .pow {
+  color: white;
+  position: relative;
+  right: 10px;
+}
+
+.subitem .pow:hover {
+  color: black;
+  background-color: white;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  font-family: 'Spartan', sans-serif;
+}
+
+header .celularesWeb {
+  text-decoration: none;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-family: 'Spartan', sans-serif;
+  margin: 10px;
+}
+
+header .celularesWeb .celweb {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header .icon {
+  width: 40px;
+  height: auto;
+  display: inline-block;
+}
+
+header h1 {
+  color: white;
+}
+
+header .buscador {
+  display: inline-block;
+  margin: 20px;
+}
+
+header .buscador .search {
+  width: 1000px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+header .contenedorsito {
+  width: 25%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .contenedorsito .sesion {
+  width: 170px;
+  position: relative;
+  top: 75px;
+  left: 120px;
+}
+
+header .contenedorsito .carrito {
+  width: 270px;
+  position: relative;
+  top: 15px;
+}
+
+/* footer */
+#footerM {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+#footerM .padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#footerM .padre .imgW {
+  position: relative;
+  right: 500px;
+}
+
+#footerM .padre .imgW .celimg {
+  display: block;
+}
+
+#footerM .WC {
+  font-size: xx-large;
+  font-family: 'Spartan', sans-serif;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  right: 300px;
+}
+
+#footerM .WC .listaUno {
+  display: inline-block;
+  position: relative;
+  right: 100px;
+}
+
+#footerM .WC .listaUno .listaDos {
+  display: inline-block;
+}
+
+/* Media queries*/
+/* --------------------------------- media queries min 576 PX AND 767 PX ------------------------------ */
+/*Header*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  header .icon {
+    width: 20px;
+    margin: 5px;
+    height: auto;
+    display: inline-block;
+  }
+  header .celweb {
+    display: none;
+  }
+  header .buscador {
+    margin: 10px;
+  }
+  header .buscador .search {
+    width: 55vw;
+    height: 40px;
+    border-radius: 3px;
+    position: relative;
+    right: -5%;
+  }
+  header .contenedorsito {
+    width: 500px;
+  }
+  header .contenedorsito .carrito {
+    width: 11vw;
+    position: relative;
+    top: 15%;
+    right: 10%;
+  }
+  header .contenedorsito .sesion {
+    width: 9vw;
+    position: relative;
+    top: 21%;
+    left: 100px;
+  }
+}
+
+/* Nav */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  nav .inicio {
+    font-size: 0.65rem;
+  }
+  .subitem {
+    position: absolute;
+    left: 165px;
+    top: 70px;
+    display: block;
+  }
+}
+
+/* Main index */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .fefe .banner .banner_description .descrip {
+    font-size: 2.2rem;
+  }
+}
+
+/* carrousel img*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .basss .carI {
+    width: 100vw;
+    height: 120vh;
+  }
+  .basss .carS {
+    width: 100vw;
+    height: 120vh;
+  }
+  .basss .carX {
+    width: 100vw;
+    height: 120vh;
+  }
+}
+
+/* Marcas inicial (style) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #grid {
+    font-size: 0.6rem;
+  }
+  body #grid .textUno {
+    font-size: 0.8rem;
+  }
+  body #grid .textDos {
+    font-size: 0.8rem;
+  }
+  body #grid .textTres {
+    font-size: 0.8rem;
+  }
+  body #grid .imgUno .sizeA {
+    width: 80px;
+  }
+  body #grid .imgDos .sizeB {
+    width: 90px;
+  }
+  body #grid .imgTres .sizeC {
+    width: 90px;
+  }
+  body #grid .imgCuatro .sizeD {
+    width: 170px;
+  }
+  body #grid .imgCinco .sizeE {
+    width: 70px;
+  }
+  body #grid .imgSeis .sizeF {
+    width: 120px;
+  }
+  body #grid .imgSiete .sizeG {
+    width: 100px;
+  }
+  body #grid .imgOcho .sizeH {
+    width: 100px;
+  }
+  body #grid .imgNueve .sizeI {
+    width: 70px;
+  }
+}
+
+/* Marcas 2 - 3 */
+/* Pagina 2 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #gridD {
+    font-size: 0.6rem;
+  }
+  body #gridD .textUno {
+    font-size: 0.8rem;
+  }
+  body #gridD .textDos {
+    font-size: 0.8rem;
+  }
+  body #gridD .textTres {
+    font-size: 0.8rem;
+  }
+  body #gridD .imgUno .sizeA {
+    width: 90px;
+  }
+  body #gridD .imgDos .sizeB {
+    width: 100px;
+  }
+  body #gridD .imgTres .sizeC {
+    width: 90px;
+  }
+  body #gridD .imgCuatro .sizeD {
+    width: 100px;
+  }
+  body #gridD .imgCinco .sizeE {
+    width: 90px;
+  }
+  body #gridD .imgSeis .sizeF {
+    width: 140px;
+  }
+  body #gridD .imgSiete .sizeG {
+    width: 95px;
+  }
+  body #gridD .imgOcho .sizeH {
+    width: 100px;
+  }
+  body #gridD .imgNueve .sizeI {
+    width: 70px;
+  }
+}
+
+/* Pagina 3*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #gridT {
+    font-size: 0.6rem;
+  }
+  body #gridT .textUno {
+    font-size: 0.8rem;
+  }
+  body #gridT .textDos {
+    font-size: 0.8rem;
+  }
+  body #gridT .textTres {
+    font-size: 0.8rem;
+  }
+  body #gridT .imgUno .sizeJ {
+    width: 100px;
+  }
+  body #gridT .imgDos .sizeK {
+    width: 100px;
+  }
+  body #gridT .imgTres .sizeM {
+    width: 100px;
+  }
+  body #gridT .imgCuatro .sizeN {
+    width: 90px;
+  }
+  body #gridT .imgCinco .sizeÑ {
+    width: 110px;
+  }
+  body #gridT .imgSeis .sizeL {
+    width: 120px;
+  }
+  body #gridT .imgSiete .sizeO {
+    width: 100px;
+  }
+  body #gridT .imgOcho .sizeP {
+    width: 160px;
+  }
+  body #gridT .imgNueve .sizeQ {
+    width: 100px;
+  }
+}
+
+/* Marcas Iphone Samsung Xiaomi */
+/*     IPHONE    */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #gridI {
+    font-size: 0.6rem;
+  }
+  body #gridI .textUno {
+    font-size: 0.8rem;
+  }
+  body #gridI .textDos {
+    font-size: 0.8rem;
+  }
+  body #gridI .textTres {
+    font-size: 0.8rem;
+  }
+  body #gridI .imgSiete .sizeG {
+    width: 90px;
+  }
+  body #gridI .imgUno .sizeA {
+    width: 90px;
+  }
+  body #gridI .imgOcho .sizeH {
+    width: 90px;
+  }
+  body #gridI .imgDos .sizeB {
+    width: 100px;
+  }
+  body #gridI .imgTres .sizeC {
+    width: 100px;
+  }
+  body #gridI .imgCuatro .sizeD {
+    width: 110px;
+  }
+  body #gridI .imgNueve .sizeI {
+    width: 90px;
+  }
+  body #gridI .imgCinco .sizeE {
+    width: 110px;
+  }
+  body #gridI .imgSeis .sizeF {
+    width: 110px;
+  }
+}
+
+/*       SAMSUNG     */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #gridS {
+    font-size: 0.6rem;
+  }
+  body #gridS .textUno {
+    font-size: 0.8rem;
+  }
+  body #gridS .textDos {
+    font-size: 0.8rem;
+  }
+  body #gridS .textTres {
+    font-size: 0.8rem;
+  }
+  body #gridS .imgUno .sizeJ {
+    width: 120px;
+  }
+  body #gridS .imgDos .sizeK {
+    width: 70px;
+  }
+  body #gridS .imgTres .sizeM {
+    width: 140px;
+  }
+  body #gridS .imgCuatro .sizeN {
+    width: 90px;
+  }
+  body #gridS .imgCinco .sizeÑ {
+    width: 80px;
+  }
+  body #gridS .imgSeis .sizeL {
+    width: 100px;
+  }
+  body #gridS .imgSiete .sizeQ {
+    width: 100px;
+  }
+  body #gridS .imgOcho .sizeO {
+    width: 95px;
+  }
+  body #gridS .imgNueve .sizeP {
+    width: 140px;
+  }
+}
+
+/*  XIAOMI   */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body #gridX {
+    font-size: 0.6rem;
+  }
+  body #gridX .textUno {
+    font-size: 0.8rem;
+  }
+  body #gridX .textDos {
+    font-size: 0.8rem;
+  }
+  body #gridX .textTres {
+    font-size: 0.8rem;
+  }
+  body #gridX .imgNueve .sizeR {
+    width: 80px;
+  }
+  body #gridX .imgOcho .sizeS {
+    width: 110px;
+  }
+  body #gridX .imgDos .sizeT {
+    width: 100px;
+  }
+  body #gridX .imgTres .sizeU {
+    width: 90px;
+  }
+  body #gridX .imgUno .sizeV {
+    width: 105px;
+  }
+  body #gridX .imgSiete .sizeW {
+    width: 100px;
+  }
+  body #gridX .imgSeis .sizeX {
+    width: 145px;
+  }
+  body #gridX .imgCuatro .sizeY {
+    width: 80px;
+  }
+  body #gridX .imgCinco .sizeZ {
+    width: 100px;
+  }
+}
+
+/*Nosotros */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pip .quienesSomos .aU {
+    font-size: 3rem;
+  }
+  .pip .quienesSomos .qs .fontq {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .qs .textU {
+    font-size: 1.5rem;
+  }
+  .pip .quienesSomos .qh .qhh {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .qh .textD {
+    font-size: 1.5rem;
+  }
+  .pip .quienesSomos .pc .pqec {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .pc .evdm {
+    font-size: 1.5rem;
+  }
+}
+
+/* Envio */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .artE div .itce {
+    font-size: 2.5rem;
+  }
+  .artE .face div .ces {
+    width: 75%;
+  }
+  .artE .face div .cesc {
+    width: 45%;
+  }
+}
+
+/*Footer*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #footerM .celimg {
+    position: relative;
+    left: 485px;
+  }
+  #footerM .WC {
+    display: none;
+  }
+  #footerM .listaUno {
+    font-size: 0.8rem;
+  }
+  #footerM .listaDos {
+    font-size: 0.8rem;
+  }
+}
+
+/* ------------------media queries desktop  >    992 PX --------------------*/
+/*Header*/
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  header .icon {
+    width: 3vw;
+    margin: 15px;
+    height: auto;
+    display: inline-block;
+  }
+  header .celweb {
+    display: none;
+  }
+  header .buscador {
+    margin: 10px;
+  }
+  header .buscador .search {
+    width: 55vw;
+    height: 4vh;
+    border-radius: 3px;
+    position: relative;
+    right: -5%;
+  }
+  header .contenedorsito {
+    width: 500px;
+  }
+  header .contenedorsito .carrito {
+    width: 20vw;
+    position: relative;
+    top: 8%;
+    right: 80%;
+  }
+  header .contenedorsito .sesion {
+    width: 14vw;
+    position: relative;
+    top: 19%;
+    left: 140px;
+  }
+}
+
+/* Nav */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  nav .inicio {
+    font-size: 1.4rem;
+  }
+  .subitem {
+    position: absolute;
+    left: 165px;
+    top: 70px;
+    display: block;
+  }
+}
+
+/* Main index */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .fefe .banner .banner_description .descrip {
+    font-size: 2.9rem;
+  }
+}
+
+/* carrousel img*/
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .basss .carI {
+    width: 100vw;
+  }
+  .basss .carS {
+    width: 100vw;
+  }
+  .basss .carX {
+    width: 100vw;
+  }
+}
+
+/* Marcas inicial (style) */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #grid {
+    font-size: 1.2rem;
+  }
+  body #grid .textUno {
+    font-size: 1.4rem;
+  }
+  body #grid .textDos {
+    font-size: 1.4rem;
+  }
+  body #grid .textTres {
+    font-size: 1.4rem;
+  }
+  body #grid .imgUno .sizeA {
+    width: 100px;
+  }
+  body #grid .imgDos .sizeB {
+    width: 120px;
+  }
+  body #grid .imgTres .sizeC {
+    width: 130px;
+  }
+  body #grid .imgCuatro .sizeD {
+    width: 200px;
+  }
+  body #grid .imgCinco .sizeE {
+    width: 100px;
+  }
+  body #grid .imgSeis .sizeF {
+    width: 170px;
+  }
+  body #grid .imgSiete .sizeG {
+    width: 120px;
+  }
+  body #grid .imgOcho .sizeH {
+    width: 130px;
+  }
+  body #grid .imgNueve .sizeI {
+    width: 90px;
+  }
+}
+
+/* Marcas 2 - 3 */
+/* Pagina 2 */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #gridD {
+    font-size: 0.1 0.2rem;
+  }
+  body #gridD .textUno {
+    font-size: 1.4rem;
+  }
+  body #gridD .textDos {
+    font-size: 1.4rem;
+  }
+  body #gridD .textTres {
+    font-size: 1.4rem;
+  }
+  body #gridD .imgUno .sizeA {
+    width: 110px;
+  }
+  body #gridD .imgDos .sizeB {
+    width: 125px;
+  }
+  body #gridD .imgTres .sizeC {
+    width: 115px;
+  }
+  body #gridD .imgCuatro .sizeD {
+    width: 120px;
+  }
+  body #gridD .imgCinco .sizeE {
+    width: 110px;
+  }
+  body #gridD .imgSeis .sizeF {
+    width: 170px;
+  }
+  body #gridD .imgSiete .sizeG {
+    width: 125px;
+  }
+  body #gridD .imgOcho .sizeH {
+    width: 130px;
+  }
+  body #gridD .imgNueve .sizeI {
+    width: 90px;
+  }
+}
+
+/* Pagina 3*/
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #gridT {
+    font-size: 1.2rem;
+  }
+  body #gridT .textUno {
+    font-size: 1.4rem;
+  }
+  body #gridT .textDos {
+    font-size: 1.4rem;
+  }
+  body #gridT .textTres {
+    font-size: 1.4rem;
+  }
+  body #gridT .imgUno .sizeJ {
+    width: 120px;
+  }
+  body #gridT .imgDos .sizeK {
+    width: 120px;
+  }
+  body #gridT .imgTres .sizeM {
+    width: 120px;
+  }
+  body #gridT .imgCuatro .sizeN {
+    width: 100px;
+  }
+  body #gridT .imgCinco .sizeÑ {
+    width: 120px;
+  }
+  body #gridT .imgSeis .sizeL {
+    width: 140px;
+  }
+  body #gridT .imgSiete .sizeO {
+    width: 120px;
+  }
+  body #gridT .imgOcho .sizeP {
+    width: 180px;
+  }
+  body #gridT .imgNueve .sizeQ {
+    width: 120px;
+  }
+}
+
+/* Marcas Iphone Samsung Xiaomi */
+/*     IPHONE    */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #gridI {
+    font-size: 1.2rem;
+  }
+  body #gridI .textUno {
+    font-size: 1.4rem;
+  }
+  body #gridI .textDos {
+    font-size: 1.4rem;
+  }
+  body #gridI .textTres {
+    font-size: 1.4rem;
+  }
+  body #gridI .imgSiete .sizeG {
+    width: 120px;
+  }
+  body #gridI .imgUno .sizeA {
+    width: 110px;
+  }
+  body #gridI .imgOcho .sizeH {
+    width: 110px;
+  }
+  body #gridI .imgDos .sizeB {
+    width: 120px;
+  }
+  body #gridI .imgTres .sizeC {
+    width: 120px;
+  }
+  body #gridI .imgCuatro .sizeD {
+    width: 130px;
+  }
+  body #gridI .imgNueve .sizeI {
+    width: 110px;
+  }
+  body #gridI .imgCinco .sizeE {
+    width: 140px;
+  }
+  body #gridI .imgSeis .sizeF {
+    width: 140px;
+  }
+}
+
+/*       SAMSUNG     */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #gridS {
+    font-size: 1.2rem;
+  }
+  body #gridS .textUno {
+    font-size: 1.4rem;
+  }
+  body #gridS .textDos {
+    font-size: 1.4rem;
+  }
+  body #gridS .textTres {
+    font-size: 1.4rem;
+  }
+  body #gridS .imgUno .sizeJ {
+    width: 140px;
+  }
+  body #gridS .imgDos .sizeK {
+    width: 90px;
+  }
+  body #gridS .imgTres .sizeM {
+    width: 170px;
+  }
+  body #gridS .imgCuatro .sizeN {
+    width: 110px;
+  }
+  body #gridS .imgCinco .sizeÑ {
+    width: 100px;
+  }
+  body #gridS .imgSeis .sizeL {
+    width: 130px;
+  }
+  body #gridS .imgSiete .sizeQ {
+    width: 120px;
+  }
+  body #gridS .imgOcho .sizeO {
+    width: 125px;
+  }
+  body #gridS .imgNueve .sizeP {
+    width: 190px;
+  }
+}
+
+/*  XIAOMI   */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  body #gridX {
+    font-size: 1.2rem;
+  }
+  body #gridX .textUno {
+    font-size: 1.4rem;
+  }
+  body #gridX .textDos {
+    font-size: 1.4rem;
+  }
+  body #gridX .textTres {
+    font-size: 1.4rem;
+  }
+  body #gridX .imgNueve .sizeR {
+    width: 90px;
+  }
+  body #gridX .imgOcho .sizeS {
+    width: 125px;
+  }
+  body #gridX .imgDos .sizeT {
+    width: 125px;
+  }
+  body #gridX .imgTres .sizeU {
+    width: 110px;
+  }
+  body #gridX .imgUno .sizeV {
+    width: 125px;
+  }
+  body #gridX .imgSiete .sizeW {
+    width: 120px;
+  }
+  body #gridX .imgSeis .sizeX {
+    width: 175px;
+  }
+  body #gridX .imgCuatro .sizeY {
+    width: 100px;
+  }
+  body #gridX .imgCinco .sizeZ {
+    width: 130px;
+  }
+}
+
+/*Nosotros */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .pip .quienesSomos .aU {
+    font-size: 4rem;
+  }
+  .pip .quienesSomos .qs .fontq {
+    font-size: 3rem;
+  }
+  .pip .quienesSomos .qs .textU {
+    font-size: 2rem;
+  }
+  .pip .quienesSomos .qh .qhh {
+    font-size: 3rem;
+  }
+  .pip .quienesSomos .qh .textD {
+    font-size: 2rem;
+  }
+  .pip .quienesSomos .pc .pqec {
+    font-size: 3rem;
+  }
+  .pip .quienesSomos .pc .evdm {
+    font-size: 2rem;
+  }
+}
+
+/* Envio */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .artE div .itce {
+    font-size: 3.2rem;
+  }
+  .artE .face div .ces {
+    font-size: 2rem;
+    width: 75%;
+  }
+  .artE .face div .cesc {
+    font-size: 2rem;
+    width: 45%;
+  }
+}
+
+/* Contacto */
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .pay .formularioContacto {
+    position: relative;
+    right: 40px;
+  }
+  .pay .formularioContacto form h2 {
+    font-size: 2rem;
+    width: 70vw;
+    position: relative;
+    left: 110px;
+  }
+  .pay .formularioContacto form .formC {
+    width: 50vw;
+  }
+  .pay .formularioContacto form .formeC {
+    width: 50vw;
+    position: relative;
+    left: 170px;
+    text-align: center;
+  }
+  .pay .formularioContacto form textarea {
+    width: 70vw;
+    height: 30vh;
+    position: relative;
+    left: 70px;
+  }
+  .pay .formularioContacto form .enviar {
+    position: relative;
+    right: 100px;
+  }
+}
+
+/*Footer*/
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  #footerM .celimg {
+    position: relative;
+    left: 415px;
+  }
+  #footerM .WC {
+    font-size: 1.7rem;
+    position: relative;
+    right: 10px;
+  }
+  #footerM .listaUno {
+    font-size: 1.2rem;
+  }
+  #footerM .listaDos {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media queries < 576 PX */
+/*Header*/
+@media only screen and (max-width: 575px) {
+  header .icon {
+    width: 20px;
+    margin: 5px;
+    height: auto;
+    display: inline-block;
+  }
+  header .celweb {
+    display: none;
+  }
+  header .buscador {
+    margin: 10px;
+  }
+  header .buscador .search {
+    width: 55vw;
+    height: 40px;
+    border-radius: 3px;
+    position: relative;
+    right: -5%;
+  }
+  header .contenedorsito {
+    width: 500px;
+  }
+  header .contenedorsito .carrito {
+    width: 11vw;
+    position: relative;
+    top: 15%;
+    right: 50%;
+  }
+  header .contenedorsito .sesion {
+    width: 9vw;
+    position: relative;
+    top: 21%;
+    left: 110%;
+  }
+}
+
+/* nav */
+@media only screen and (max-width: 575px) {
+  nav .inicio {
+    font-size: 0.5rem;
+  }
+  .subitem {
+    position: absolute;
+    left: 95px;
+    top: 70px;
+    display: block;
+  }
+}
+
+/* Main index */
+@media only screen and (max-width: 575px) {
+  .fefe .banner .banner_description {
+    font-size: 0.8rem;
+  }
+  .fefe .banner .banner_description .descrip {
+    font-size: 1.5rem;
+  }
+}
+
+/* carrousel img */
+@media only screen and (max-width: 575px) {
+  .basss .carI {
+    width: 100vw;
+    height: 110vh;
+  }
+  .basss .carS {
+    width: 100vw;
+    height: 110vh;
+  }
+  .basss .carX {
+    width: 100vw;
+    height: 110vh;
+  }
+}
+
+/* Marcas inicial (style) < 576px */
+@media only screen and (max-width: 575px) {
+  body #grid {
+    font-size: 0.5rem;
+  }
+  body #grid .textUno {
+    font-size: 0.7rem;
+  }
+  body #grid .textDos {
+    font-size: 0.7rem;
+  }
+  body #grid .textTres {
+    font-size: 0.7rem;
+  }
+  body #grid .imgUno .sizeA {
+    width: 40px;
+  }
+  body #grid .imgDos .sizeB {
+    width: 50px;
+  }
+  body #grid .imgTres .sizeC {
+    width: 50px;
+  }
+  body #grid .imgCuatro .sizeD {
+    width: 130px;
+  }
+  body #grid .imgCinco .sizeE {
+    width: 50px;
+  }
+  body #grid .imgSeis .sizeF {
+    width: 80px;
+  }
+  body #grid .imgSiete .sizeG {
+    width: 70px;
+  }
+  body #grid .imgOcho .sizeH {
+    width: 70px;
+  }
+  body #grid .imgNueve .sizeI {
+    width: 40px;
+  }
+}
+
+/* Marcas 2 - 3 */
+/* Pagina 2 */
+@media only screen and (max-width: 575px) {
+  body #gridD {
+    font-size: 0.5rem;
+  }
+  body #gridD .textUno {
+    font-size: 0.7rem;
+  }
+  body #gridD .textDos {
+    font-size: 0.7rem;
+  }
+  body #gridD .textTres {
+    font-size: 0.7rem;
+  }
+  body #gridD .imgUno .sizeA {
+    width: 70px;
+  }
+  body #gridD .imgDos .sizeB {
+    width: 80px;
+  }
+  body #gridD .imgTres .sizeC {
+    width: 70px;
+  }
+  body #gridD .imgCuatro .sizeD {
+    width: 80px;
+  }
+  body #gridD .imgCinco .sizeE {
+    width: 70px;
+  }
+  body #gridD .imgSeis .sizeF {
+    width: 110px;
+  }
+  body #gridD .imgSiete .sizeG {
+    width: 75px;
+  }
+  body #gridD .imgOcho .sizeH {
+    width: 80px;
+  }
+  body #gridD .imgNueve .sizeI {
+    width: 50px;
+  }
+}
+
+/* Pagina 3*/
+@media only screen and (max-width: 575px) {
+  body #gridT {
+    font-size: 0.5rem;
+  }
+  body #gridT .textUno {
+    font-size: 0.7rem;
+  }
+  body #gridT .textDos {
+    font-size: 0.7rem;
+  }
+  body #gridT .textTres {
+    font-size: 0.7rem;
+  }
+  body #gridT .imgUno .sizeJ {
+    width: 80px;
+  }
+  body #gridT .imgDos .sizeK {
+    width: 80px;
+  }
+  body #gridT .imgTres .sizeM {
+    width: 80px;
+  }
+  body #gridT .imgCuatro .sizeN {
+    width: 70px;
+  }
+  body #gridT .imgCinco .sizeÑ {
+    width: 80px;
+  }
+  body #gridT .imgSeis .sizeL {
+    width: 90px;
+  }
+  body #gridT .imgSiete .sizeO {
+    width: 80px;
+  }
+  body #gridT .imgOcho .sizeP {
+    width: 130px;
+  }
+  body #gridT .imgNueve .sizeQ {
+    width: 80px;
+  }
+}
+
+/* Marcas Iphone Samsung Xiaomi */
+/*     IPHONE    */
+@media only screen and (max-width: 575px) {
+  body #gridI {
+    font-size: 0.5rem;
+  }
+  body #gridI .textUno {
+    font-size: 0.7rem;
+  }
+  body #gridI .textDos {
+    font-size: 0.7rem;
+  }
+  body #gridI .textTres {
+    font-size: 0.7rem;
+  }
+  body #gridI .imgSiete .sizeG {
+    width: 70px;
+  }
+  body #gridI .imgUno .sizeA {
+    width: 70px;
+  }
+  body #gridI .imgOcho .sizeH {
+    width: 70px;
+  }
+  body #gridI .imgDos .sizeB {
+    width: 80px;
+  }
+  body #gridI .imgTres .sizeC {
+    width: 80px;
+  }
+  body #gridI .imgCuatro .sizeD {
+    width: 90px;
+  }
+  body #gridI .imgNueve .sizeI {
+    width: 70px;
+  }
+  body #gridI .imgCinco .sizeE {
+    width: 90px;
+  }
+  body #gridI .imgSeis .sizeF {
+    width: 90px;
+  }
+}
+
+/*       SAMSUNG     */
+@media only screen and (max-width: 575px) {
+  body #gridS {
+    font-size: 0.5rem;
+  }
+  body #gridS .textUno {
+    font-size: 0.7rem;
+  }
+  body #gridS .textDos {
+    font-size: 0.7rem;
+  }
+  body #gridS .textTres {
+    font-size: 0.7rem;
+  }
+  body #gridS .imgUno .sizeJ {
+    width: 100px;
+  }
+  body #gridS .imgDos .sizeK {
+    width: 50px;
+  }
+  body #gridS .imgTres .sizeM {
+    width: 120px;
+  }
+  body #gridS .imgCuatro .sizeN {
+    width: 70px;
+  }
+  body #gridS .imgCinco .sizeÑ {
+    width: 70px;
+  }
+  body #gridS .imgSeis .sizeL {
+    width: 80px;
+  }
+  body #gridS .imgSiete .sizeQ {
+    width: 80px;
+  }
+  body #gridS .imgOcho .sizeO {
+    width: 75px;
+  }
+  body #gridS .imgNueve .sizeP {
+    width: 120px;
+  }
+}
+
+/*  XIAOMI   */
+@media only screen and (max-width: 575px) {
+  body #gridX {
+    font-size: 0.5rem;
+  }
+  body #gridX .textUno {
+    font-size: 0.7rem;
+  }
+  body #gridX .textDos {
+    font-size: 0.7rem;
+  }
+  body #gridX .textTres {
+    font-size: 0.7rem;
+  }
+  body #gridX .imgNueve .sizeR {
+    width: 60px;
+  }
+  body #gridX .imgOcho .sizeS {
+    width: 90px;
+  }
+  body #gridX .imgDos .sizeT {
+    width: 80px;
+  }
+  body #gridX .imgTres .sizeU {
+    width: 70px;
+  }
+  body #gridX .imgUno .sizeV {
+    width: 85px;
+  }
+  body #gridX .imgSiete .sizeW {
+    width: 80px;
+  }
+  body #gridX .imgSeis .sizeX {
+    width: 125px;
+  }
+  body #gridX .imgCuatro .sizeY {
+    width: 60px;
+  }
+  body #gridX .imgCinco .sizeZ {
+    width: 80px;
+  }
+}
+
+/*Nosotros */
+@media only screen and (max-width: 575px) {
+  .pip .quienesSomos .aU {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .qs .fontq {
+    font-size: 2rem;
+  }
+  .pip .quienesSomos .qs .textU {
+    font-size: 1rem;
+  }
+  .pip .quienesSomos .qh .qhh {
+    font-size: 2rem;
+  }
+  .pip .quienesSomos .qh .textD {
+    font-size: 1rem;
+  }
+  .pip .quienesSomos .pc .pqec {
+    font-size: 2rem;
+  }
+  .pip .quienesSomos .pc .evdm {
+    font-size: 1rem;
+  }
+}
+
+/* Envio */
+@media only screen and (max-width: 575px) {
+  .artE div .itce {
+    font-size: 2rem;
+  }
+  .artE .face div .ces {
+    width: 75%;
+  }
+  .artE .face div .cesc {
+    width: 50%;
+  }
+}
+
+/*Footer*/
+@media only screen and (max-width: 575px) {
+  #footerM .celimg {
+    position: relative;
+    left: 495px;
+    width: 50px;
+  }
+  #footerM .WC {
+    display: none;
+  }
+  #footerM .listaUno {
+    font-size: 0.5rem;
+  }
+  #footerM .listaDos {
+    font-size: 0.5rem;
+  }
+}
+
+/* ------------------media queries tablets  > =  768 PX --------------------*/
+/* Header*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .icon {
+    width: 35px;
+    margin: 5px;
+    height: auto;
+    display: inline-block;
+  }
+  header .celweb {
+    display: none;
+  }
+  header .buscador {
+    margin: 10px;
+  }
+  header .buscador .search {
+    width: 55vw;
+    height: 40px;
+    border-radius: 3px;
+    position: relative;
+    right: -5%;
+    top: 1%;
+  }
+  header .contenedorsito {
+    width: 500px;
+  }
+  header .contenedorsito .carrito {
+    width: 22vw;
+    position: relative;
+    top: 7%;
+    right: 50%;
+  }
+  header .contenedorsito .sesion {
+    width: 15vw;
+    position: relative;
+    top: 19%;
+    left: 110%;
+  }
+}
+
+/* nav */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  nav .inicio {
+    font-size: 0.9rem;
+  }
+  .subitem {
+    position: absolute;
+    left: 135px;
+    top: 70px;
+    display: block;
+  }
+}
+
+/* Main index */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .fefe .banner .banner_description {
+    font-size: 1rem;
+  }
+  .fefe .banner .banner_description .descrip {
+    font-size: 1.8rem;
+  }
+}
+
+/* carrousel img */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .basss .carI {
+    width: 100vw;
+  }
+  .basss .carS {
+    width: 100vw;
+  }
+  .basss .carX {
+    width: 100vw;
+  }
+}
+
+/* Marcas inicial (style) < 576px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #grid {
+    font-size: 0.8rem;
+  }
+  body #grid .textUno {
+    font-size: 0.9rem;
+  }
+  body #grid .textDos {
+    font-size: 0.9rem;
+  }
+  body #grid .textTres {
+    font-size: 0.9rem;
+  }
+  body #grid .imgUno .sizeA {
+    width: 60px;
+  }
+  body #grid .imgDos .sizeB {
+    width: 70px;
+  }
+  body #grid .imgTres .sizeC {
+    width: 75px;
+  }
+  body #grid .imgCuatro .sizeD {
+    width: 150px;
+  }
+  body #grid .imgCinco .sizeE {
+    width: 60px;
+  }
+  body #grid .imgSeis .sizeF {
+    width: 110px;
+  }
+  body #grid .imgSiete .sizeG {
+    width: 80px;
+  }
+  body #grid .imgOcho .sizeH {
+    width: 90px;
+  }
+  body #grid .imgNueve .sizeI {
+    width: 65px;
+  }
+}
+
+/* Marcas 2 - 3 */
+/* Pagina 2 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #gridD {
+    font-size: 0.8rem;
+  }
+  body #gridD .textUno {
+    font-size: 0.9rem;
+  }
+  body #gridD .textDos {
+    font-size: 0.9rem;
+  }
+  body #gridD .textTres {
+    font-size: 0.9rem;
+  }
+  body #gridD .imgUno .sizeA {
+    width: 80px;
+  }
+  body #gridD .imgDos .sizeB {
+    width: 90px;
+  }
+  body #gridD .imgTres .sizeC {
+    width: 90px;
+  }
+  body #gridD .imgCuatro .sizeD {
+    width: 80px;
+  }
+  body #gridD .imgCinco .sizeE {
+    width: 80px;
+  }
+  body #gridD .imgSeis .sizeF {
+    width: 130px;
+  }
+  body #gridD .imgSiete .sizeG {
+    width: 95px;
+  }
+  body #gridD .imgOcho .sizeH {
+    width: 105px;
+  }
+  body #gridD .imgNueve .sizeI {
+    width: 70px;
+  }
+}
+
+/* Pagina 3*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #gridT {
+    font-size: 0.8rem;
+  }
+  body #gridT .textUno {
+    font-size: 0.9rem;
+  }
+  body #gridT .textDos {
+    font-size: 0.9rem;
+  }
+  body #gridT .textTres {
+    font-size: 0.9rem;
+  }
+  body #gridT .imgUno .sizeJ {
+    width: 90px;
+  }
+  body #gridT .imgDos .sizeK {
+    width: 90px;
+  }
+  body #gridT .imgTres .sizeM {
+    width: 90px;
+  }
+  body #gridT .imgCuatro .sizeN {
+    width: 70px;
+  }
+  body #gridT .imgCinco .sizeÑ {
+    width: 85px;
+  }
+  body #gridT .imgSeis .sizeL {
+    width: 95px;
+  }
+  body #gridT .imgSiete .sizeO {
+    width: 90px;
+  }
+  body #gridT .imgOcho .sizeP {
+    width: 140px;
+  }
+  body #gridT .imgNueve .sizeQ {
+    width: 90px;
+  }
+}
+
+/* Marcas Iphone Samsung Xiaomi */
+/*     IPHONE    */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #gridI {
+    font-size: 0.8rem;
+  }
+  body #gridI .textUno {
+    font-size: 0.9rem;
+  }
+  body #gridI .textDos {
+    font-size: 0.9rem;
+  }
+  body #gridI .textTres {
+    font-size: 0.9rem;
+  }
+  body #gridI .imgSiete .sizeG {
+    width: 80px;
+  }
+  body #gridI .imgUno .sizeA {
+    width: 80px;
+  }
+  body #gridI .imgOcho .sizeH {
+    width: 80px;
+  }
+  body #gridI .imgDos .sizeB {
+    width: 90px;
+  }
+  body #gridI .imgTres .sizeC {
+    width: 90px;
+  }
+  body #gridI .imgCuatro .sizeD {
+    width: 100px;
+  }
+  body #gridI .imgNueve .sizeI {
+    width: 80px;
+  }
+  body #gridI .imgCinco .sizeE {
+    width: 100px;
+  }
+  body #gridI .imgSeis .sizeF {
+    width: 100px;
+  }
+}
+
+/*       SAMSUNG     */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #gridS {
+    font-size: 0.8rem;
+  }
+  body #gridS .textUno {
+    font-size: 0.9rem;
+  }
+  body #gridS .textDos {
+    font-size: 0.9rem;
+  }
+  body #gridS .textTres {
+    font-size: 0.9rem;
+  }
+  body #gridS .imgUno .sizeJ {
+    width: 110px;
+  }
+  body #gridS .imgDos .sizeK {
+    width: 70px;
+  }
+  body #gridS .imgTres .sizeM {
+    width: 140px;
+  }
+  body #gridS .imgCuatro .sizeN {
+    width: 90px;
+  }
+  body #gridS .imgCinco .sizeÑ {
+    width: 80px;
+  }
+  body #gridS .imgSeis .sizeL {
+    width: 100px;
+  }
+  body #gridS .imgSiete .sizeQ {
+    width: 90px;
+  }
+  body #gridS .imgOcho .sizeO {
+    width: 85px;
+  }
+  body #gridS .imgNueve .sizeP {
+    width: 130px;
+  }
+}
+
+/*  XIAOMI   */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body #gridX {
+    font-size: 0.8rem;
+  }
+  body #gridX .textUno {
+    font-size: 0.9rem;
+  }
+  body #gridX .textDos {
+    font-size: 0.9rem;
+  }
+  body #gridX .textTres {
+    font-size: 0.9rem;
+  }
+  body #gridX .imgNueve .sizeR {
+    width: 70px;
+  }
+  body #gridX .imgOcho .sizeS {
+    width: 100px;
+  }
+  body #gridX .imgDos .sizeT {
+    width: 90px;
+  }
+  body #gridX .imgTres .sizeU {
+    width: 80px;
+  }
+  body #gridX .imgUno .sizeV {
+    width: 95px;
+  }
+  body #gridX .imgSiete .sizeW {
+    width: 90px;
+  }
+  body #gridX .imgSeis .sizeX {
+    width: 135px;
+  }
+  body #gridX .imgCuatro .sizeY {
+    width: 70px;
+  }
+  body #gridX .imgCinco .sizeZ {
+    width: 90px;
+  }
+}
+
+/*Nosotros */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .pip .quienesSomos .aU {
+    font-size: 3.5rem;
+  }
+  .pip .quienesSomos .qs .fontq {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .qs .textU {
+    font-size: 1.7rem;
+  }
+  .pip .quienesSomos .qh .qhh {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .qh .textD {
+    font-size: 1.7rem;
+  }
+  .pip .quienesSomos .pc .pqec {
+    font-size: 2.5rem;
+  }
+  .pip .quienesSomos .pc .evdm {
+    font-size: 1.7rem;
+  }
+}
+
+/* Envio */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .artE div .itce {
+    font-size: 2rem;
+  }
+  .artE .face div .ces {
+    width: 75%;
+  }
+  .artE .face div .cesc {
+    width: 45%;
+  }
+}
+
+/*Footer*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #footerM .celimg {
+    position: relative;
+    left: 445px;
+    width: 60px;
+  }
+  #footerM .WC {
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  #footerM .listaUno {
+    font-size: 0.9rem;
+  }
+  #footerM .listaDos {
+    font-size: 0.9rem;
+  }
+}
+
+/*Media queries*/
+@media only screen and (max-width: 768) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: darkmagenta;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: black;
+  }
+}
+
+/* body */
+body {
+  background-color: black;
+  margin: 0;
+}
+
+/* Marcas Grid pagina 2 */
+#gridD {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#9273df));
+  background: linear-gradient(#f2f2f2, #9273df);
+  color: #121312;
+  text-align: center;
+  width: auto;
+  height: 1000px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "uno cuatro cinco seis" "dos siete ocho nueve" "tres diez once doce";
+}
+
+#gridD .textUno {
+  color: #121312;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: uno;
+  font-size: xx-large;
+}
+
+#gridD .textDos {
+  color: #121312;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dos;
+  font-size: xx-large;
+}
+
+#gridD .textTres {
+  color: #121312;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tres;
+  font-size: xx-large;
+}
+
+#gridD .imgUno:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgUno .sizeA {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cuatro;
+}
+
+#gridD .imgDos:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgDos .sizeB {
+  width: 180px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cinco;
+}
+
+#gridD .imgTres:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgTres .sizeC {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: seis;
+}
+
+#gridD .imgCuatro:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgCuatro .sizeD {
+  width: 150px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: siete;
+}
+
+#gridD .imgCinco:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgCinco .sizeE {
+  width: 140px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: ocho;
+}
+
+#gridD .imgSeis:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgSeis .sizeF {
+  width: 230px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: nueve;
+}
+
+#gridD .imgSiete:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgSiete .sizeG {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: diez;
+}
+
+#gridD .imgOcho:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgOcho .sizeH {
+  width: 170px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: once;
+}
+
+#gridD .imgNueve:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridD .imgNueve .sizeI {
+  width: 130px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: doce;
+}
+
+.navigation {
+  background-color: #9273df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Grid marcas pagina 3*/
+#gridT {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#9273df));
+  background: linear-gradient(#f2f2f2, #9273df);
+  color: #121312;
+  text-align: center;
+  width: auto;
+  height: 1000px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "uno cuatro cinco seis" "dos siete ocho nueve" "tres diez once doce";
+}
+
+#gridT .textUno {
+  color: #121312;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: uno;
+  font-size: xx-large;
+}
+
+#gridT .textDos {
+  color: #121312;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dos;
+  font-size: xx-large;
+}
+
+#gridT .textTres {
+  color: #121312;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tres;
+  font-size: xx-large;
+}
+
+#gridT .imgUno:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgUno .sizeJ {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cuatro;
+}
+
+#gridT .imgDos:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgDos .sizeK {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cinco;
+}
+
+#gridT .imgTres:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgTres .sizeM {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: seis;
+}
+
+#gridT .imgCuatro:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgCuatro .sizeN {
+  width: 150px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: siete;
+}
+
+#gridT .imgCinco:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgCinco .sizeÑ {
+  width: 180px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: ocho;
+}
+
+#gridT .imgSeis:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgSeis .sizeL {
+  width: 180px;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: nueve;
+}
+
+#gridT .imgSiete:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgSiete .sizeO {
+  width: 160px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: diez;
+}
+
+#gridT .imgOcho:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgOcho .sizeP {
+  width: 240px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: once;
+}
+
+#gridT .imgNueve:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+#gridT .imgNueve .sizeQ {
+  width: 180px;
+  height: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: doce;
+}
